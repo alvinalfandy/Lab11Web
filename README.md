@@ -52,7 +52,7 @@ Laporan ini juga dilengkapi dengan screenshot hasil implementasi untuk mendukung
 - Jalankan XAMPP dan aktifkan Apache serta MySQL.
 - Buka folder `lab7_php_ci` sebagai root project di VSCode.
 
-![alt text](Gambar/image1.png)
+
 
 ---
 
