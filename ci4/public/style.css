@@ -1,0 +1,655 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.6;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #5a5a5a;
+  background-color: #f5f5f5;
+}
+
+/* Container */
+#container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: #1f5faa;
+  color: #fff;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+/* Navigasi */
+nav {
+  background-color: #1f5faa;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.auth-links {
+  display: flex;
+}
+
+nav a {
+  padding: 15px 25px;
+  color: #ffffff;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+nav a.active,
+nav a:hover {
+  background-color: #2b83ea;
+}
+
+nav a.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+}
+
+nav a.logout-btn:hover {
+  background-color: #b71c1c;
+}
+
+/* Hero Panel */
+#hero {
+  background-color: #e4e4e5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#hero h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+#hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Layout */
+#wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+#main {
+  flex: 1 1 65%;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+#sidebar {
+  flex: 1 1 30%;
+  min-width: 250px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Admin Container */
+.admin-container {
+  padding: 20px;
+}
+
+/* Search Container */
+.search-container {
+  margin-bottom: 20px;
+}
+
+.form-search {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+}
+
+/* Artikel Entry */
+.entry {
+  margin-bottom: 30px;
+}
+
+.entry h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #1f5faa;
+}
+
+.entry p {
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.entry img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+/* Artikel Terkini Container */
+.artikel-terkini-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.artikel-terkini-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #1f5faa, #2b83ea);
+}
+
+.artikel-terkini-container h2 {
+  font-size: 26px;
+  color: #1f5faa;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.artikel-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.artikel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.artikel-card h4 {
+  background-color: #f5f8ff;
+  padding: 15px 20px;
+}
+
+.artikel-card h4 a {
+  color: #1f5faa;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.artikel-card h4 a:hover {
+  color: #2b83ea;
+}
+
+.artikel-card .tanggal {
+  background-color: #1f5faa;
+  color: white;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin: 0 0 10px 20px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.artikel-card .content {
+  padding: 20px;
+}
+
+.artikel-card p {
+  font-size: 14px;
+  color: #5a5a5a;
+  line-height: 1.6;
+}
+
+.artikel-card .read-more {
+  display: inline-block;
+  margin-top: 15px;
+  color: #1f5faa;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.artikel-card .read-more:hover {
+  text-decoration: underline;
+}
+
+/* Widget Box */
+.widget-box {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.widget-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.widget-box .title {
+  padding: 15px;
+  background-color: #428bca;
+  color: #fff;
+  font-weight: 600;
+}
+
+.widget-box ul {
+  list-style: none;
+}
+
+.widget-box li {
+  border-bottom: 1px solid #eee;
+}
+
+.widget-box li a {
+  padding: 12px 16px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.widget-box li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  background-color: #1d1d1d;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Button */
+button,
+.tambah-artikel-btn {
+  background-color: #1f5faa;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+button:hover,
+.tambah-artikel-btn:hover {
+  background-color: #2b83ea;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+/* Form Elements */
+.input,
+.msg,
+.area {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Table Style */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table th, .table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table thead {
+  background-color: #0071b5;
+  color: white;
+}
+
+.table tfoot {
+  background-color: #f1f1f1;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+/* Pagination Styling */
+.pagination-wrapper {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pagination li {
+  border-right: 1px solid #eee;
+}
+
+.pagination li:last-child {
+  border-right: none;
+}
+
+.pagination li a,
+.pagination li span {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1f5faa;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.pagination li.active span {
+  background-color: #1f5faa;
+  color: white;
+}
+
+.pagination li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Button Style */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Button Primary */
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Button Danger */
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #bd2130;
+}
+
+/* Button Large (buat submit form di admin.php) */
+.btn-large {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.form-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-tambah .form-group {
+  margin-bottom: 20px;
+}
+
+.form-tambah label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-tambah .input,
+.form-tambah .area {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-tambah .input:focus,
+.form-tambah .area:focus {
+  border-color: #1f5faa;
+  box-shadow: 0 0 8px rgba(31, 95, 170, 0.2);
+  outline: none;
+}
+
+.form-tambah button {
+  width: 100%;
+}
+
+/* Text Center Helper */
+.text-center {
+  text-align: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  #wrapper {
+    flex-direction: column;
+  }
+
+  #main, #sidebar {
+    flex: 1 1 100%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .nav-links, .auth-links {
+    width: 100%;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  #hero h1 {
+    font-size: 32px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  #hero {
+    padding: 40px 10px;
+  }
+
+  .artikel-terkini-container h2 {
+    font-size: 22px;
+  }
+
+  .artikel-card h4 a {
+    font-size: 16px;
+  }
+  
+  .form-search {
+    flex-direction: column;
+  }
+  
+  .search-btn {
+    width: 100%;
+  }
+}
+
+/* Divider */
+.divider {
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 40px 0;
+}
+
+/* Menu Highlight untuk Artikel dan About */
+nav a.highlight {
+  background-color: #2b83ea;
+  font-weight: 700;
+}
+
+nav a.highlight:hover {
+  background-color: #3993fa;
+}
+
+nav a.highlight.active {
+  background-color: #0062cc;
+  box-shadow: inset 0 -4px 0 #fff;
+}
+
+/* Pagination Fix - memastikan warna putih */
+.pagination li a,
+.pagination li span {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #1f5faa;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.pagination li.active span {
+  background-color: #1f5faa;
+  color: white;
+}
+
+.pagination li a:hover {
+  background-color: #f0f0f0;
+}
+nav a.custom-highlight {
+  background-color: #2b83ea;
+  color: white;
+  font-weight: 700;
+  position: relative;
+}
+
+nav a.custom-highlight:hover {
+  background-color: #3993fa;
+}
+
+nav a.custom-highlight.active {
+  background-color: #0062cc;
+}
+
+nav a.custom-highlight.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: white;
+}
+
+/* Fix untuk pagination */
+.pagination {
+  background-color: transparent;
+}
+
+.pagination li {
+  background-color: #fff;
+}
